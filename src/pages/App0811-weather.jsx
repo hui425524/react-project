@@ -13,12 +13,11 @@ const App = () => {
         (async () => {
 
             // 取得public裡的json檔案
-            const data = await axios.get('./json./F-C0032-001.json');
+            const data = await axios.get('./src/json./F-C0032-001.json');
             // 檢查是否連上json
-            console.log(data);
+            console.log(data.data.cwaopendata.dataset);
 
-            // 取得json中的src檔案
-
+            // 取得src中的json檔案
 
         })();
     }, []);
@@ -85,36 +84,219 @@ const App = () => {
                     <a href={photo.photo1.btnURL} className="btn">{photo.photo1.btnName}</a>
                 </div> */}
 
-            <div className='container'>
+            <div className='cards'>
+                {/* 取得縣市陣列跑回圈 */}
 
-                <h2>台北市</h2>
-                <div className='date'>
-                    <h2>11日</h2>
+                <div className='card'>
+
+                    {/* 卡片標題 */}
+                    <div className='card-header'>
+                        台北市
+                    </div>
+
+                    {/* 卡片內容 */}
+
+                    <div className='card-body'>
+                        {/*取得陣列資料後跑迴圈  */}
+
+                        <div className='item'>
+
+                            {/* 日期 */}
+                            <div className='date'>11日</div>
+
+                            {/* 時間 */}
+                            <div className='time'>上午6:00 <br />~<br />下午6:00 <br /></div>
+
+                            {/* 天氣圖 */}
+                            <div className='publicPic'>
+
+                                {/* 天氣圖:執行路徑要將圖片放在public資料夾中 */}
+                                <img src="./weatherIcon/晴午後多雲短暫陣雨.svg" alt="" />
+                            </div>
+
+                            {/* 天氣圖名稱 */}
+                            <div className='weathername'>晴午後短暫雷陣雨</div>
+
+
+                            {/* 降雨機率 */}
+                            <div className='p'>
+                                <IoUmbrellaSharp />80%
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div className='time'>
-                    <p>上午6:00 <br /> ~ <br /></p>
-                    <p>下午6:00</p>
+{/* 不用這裡，可以註解調 */}
+                <div className='card'>
 
+                    {/* 卡片標題 */}
+                    <div className='card-header'>
+                        台北市
+                    </div>
+
+                    {/* 卡片內容 */}
+
+                    <div className='card-body'>
+                        {/*取得陣列資料後跑迴圈  */}
+
+                        <div className='item'>
+
+                            {/* 日期 */}
+                            <div className='date'>11日</div>
+
+                            {/* 時間 */}
+                            <div className='time'>上午6:00 <br />~<br />下午6:00 <br /></div>
+
+                            {/* 天氣圖 */}
+                            <div className='publicPic'>
+
+                                {/* 天氣圖:執行路徑要將圖片放在public資料夾中 */}
+                                <img src="./weatherIcon/晴午後多雲短暫陣雨.svg" alt="" />
+                            </div>
+
+                            {/* 天氣圖名稱 */}
+                            <div className='weathername'>晴午後短暫雷陣雨</div>
+
+
+                            {/* 降雨機率 */}
+                            <div className='p'>
+                                <IoUmbrellaSharp />80%
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div className='publicPic'>
 
-                    {/* 天氣圖:執行路徑要將圖片放在public資料夾中 */}
-                    <img src="./weatherIcon/晴午後多雲短暫陣雨.svg" alt="" />
+
+                <div className='card'>
+
+                    {/* 卡片標題 */}
+                    <div className='card-header'>
+                        台北市
+                    </div>
+
+                    {/* 卡片內容 */}
+
+                    <div className='card-body'>
+                        {/*取得陣列資料後跑迴圈  */}
+
+                        <div className='item'>
+
+                            {/* 日期 */}
+                            <div className='date'>11日</div>
+
+                            {/* 時間 */}
+                            <div className='time'>上午6:00 <br />~<br />下午6:00 <br /></div>
+
+                            {/* 天氣圖 */}
+                            <div className='publicPic'>
+
+                                {/* 天氣圖:執行路徑要將圖片放在public資料夾中 */}
+                                <img src="./weatherIcon/晴午後多雲短暫陣雨.svg" alt="" />
+                            </div>
+
+                            {/* 天氣圖名稱 */}
+                            <div className='weathername'>晴午後短暫雷陣雨</div>
+
+
+                            {/* 降雨機率 */}
+                            <div className='p'>
+                                <IoUmbrellaSharp />80%
+                            </div>
+                        </div>
+                    </div>
                 </div>
+{/*  */}
 
-                <div className='name'></div>
-                <h2>晴午後短暫雷陣雨</h2>
 
-                <div className='p'>
-                    <IoUmbrellaSharp />80%
+            </div>
+
+
+            <div className='cards'>
+                {/* 取得縣市陣列跑回圈 */}
+
+                <div className='card'>
+
+                    {/* 卡片標題 */}
+                    <div className='card-header'>
+                        台北市
+                    </div>
+
+                    {/* 卡片內容 */}
+
+                    <div className='card-body'>
+                        {/*取得陣列資料後跑迴圈  */}
+
+                        <div className='item'>
+
+                            {/* 日期 */}
+                            <div className='date'>11日</div>
+
+                            {/* 時間 */}
+                            <div className='time'>上午6:00 <br />~<br />下午6:00 <br /></div>
+
+                            {/* 天氣圖 */}
+                            <div className='publicPic'>
+
+                                {/* 天氣圖:執行路徑要將圖片放在public資料夾中 */}
+                                <img src="./weatherIcon/晴午後多雲短暫陣雨.svg" alt="" />
+                            </div>
+
+                            {/* 天氣圖名稱 */}
+                            <div className='weathername'>晴午後短暫雷陣雨</div>
+
+
+                            {/* 降雨機率 */}
+                            <div className='p'>
+                                <IoUmbrellaSharp />80%
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
 
+            <div className='cards'>
+                {/* 取得縣市陣列跑回圈 */}
+
+                <div className='card'>
+
+                    {/* 卡片標題 */}
+                    <div className='card-header'>
+                        台北市
+                    </div>
+
+                    {/* 卡片內容 */}
+
+                    <div className='card-body'>
+                        {/*取得陣列資料後跑迴圈  */}
+
+                        <div className='item'>
+
+                            {/* 日期 */}
+                            <div className='date'>11日</div>
+
+                            {/* 時間 */}
+                            <div className='time'>上午6:00 <br />~<br />下午6:00 <br /></div>
+
+                            {/* 天氣圖 */}
+                            <div className='publicPic'>
+
+                                {/* 天氣圖:執行路徑要將圖片放在public資料夾中 */}
+                                <img src="./weatherIcon/晴午後多雲短暫陣雨.svg" alt="" />
+                            </div>
+
+                            {/* 天氣圖名稱 */}
+                            <div className='weathername'>晴午後短暫雷陣雨</div>
 
 
-
+                            {/* 降雨機率 */}
+                            <div className='p'>
+                                <IoUmbrellaSharp />80%
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </>
