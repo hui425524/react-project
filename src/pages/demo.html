@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="inputText">
+    <script>
+        let myinput=document.querySelector('#inputText')
+        // console.dir(myinput);
+
+        // change事件: 內容異動後離開時才會觸發
+        myinput.addEventListener('change',(e)=>{
+            console.log(e.target.value);
+        })
+        // 內容異動的時候，及時觸發=>keyUp
+        myinput.addEventListener('keyUp',(e)=>{
+            console.log(e.target.value);
+        })
+    </script>
+
+
+
+    <!-- <button id="btn1">點擊次數:</button>
+
+    <script>
+        let btn1=document.querySelector('#btn1');
+        let count = 0;
+        btn1.addEventListener('click',()=>{
+
+            console.log(count++);
+        }) -->
+        
+    </script>
+    
+</body>
+</html>
