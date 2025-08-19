@@ -56,7 +56,7 @@ function App0819_4() {
                                     // src={photo.imgName}
                                     src={photo}
                                     alt=''
-                                    width={120}
+                                    width={100}
                                     height={80}
                                     style={{ cursor: 'pointer' }}
 
