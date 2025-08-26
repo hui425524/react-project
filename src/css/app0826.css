@@ -1,0 +1,21 @@
+.zoom{
+
+    border:2px solid red;
+    width: 300px;
+    display: inline-block;
+    margin: 100px;
+    overflow: hidden;/* 超過範圍時隱藏 */
+
+
+}
+
+.imgScale{
+
+    transform: scale(1.2);
+}
+
+img{
+    width:100%;
+    vertical-align: top;
+    transform: all 1s;
+}

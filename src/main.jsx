@@ -9,7 +9,7 @@ import { createRoot } from 'react-dom/client'
 
 // import App from './pages/AppCards'
 // import App from './pages/App0811-weather'
-import App from './pages/App0820_1'
+import App from './pages/App0826_1_slide輪播'
 
 createRoot(document.getElementById('root')).render(
   //嚴謹模式(會把要呈現的內容呈現兩次)
