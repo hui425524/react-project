@@ -10,7 +10,11 @@ import { createRoot } from 'react-dom/client'
 // import App from './pages/AppCards'
 // import App from './pages/App0811-weather'
 
-import App from './pages/App0826_1_slide輪播'
+// import App from './pages/App0826_1_slide輪播'
+
+// import App from './pages/App0902_useMemo'
+
+import App from './pages/App0902way2'
 
 // import App from './pages/App0826_tooptip'
 
