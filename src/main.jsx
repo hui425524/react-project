@@ -14,7 +14,7 @@ import { createRoot } from 'react-dom/client'
 
 // import App from './pages/App0902_useMemo'
 
-import App from './pages/App0902way2'
+import App from './pages/App0903統計次數'
 
 // import App from './pages/App0826_tooptip'
 
